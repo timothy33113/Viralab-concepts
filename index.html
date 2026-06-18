@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ViraLab — 56 concepts viraux pour faire 1 million de vues</title>
+<title>ViraLab · 56 concepts viraux pour faire 1 million de vues</title>
 <meta name="description" content="50 idées de Reels viraux prêtes à recopier pour les commerçants, artisans et indépendants : restaurants, salons, boutiques. Le produit d'appel ViraLab.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,10 +99,22 @@ h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .reel .views span{font-weight:400;font-size:.8rem;opacity:.85;display:block}
 .float-card{position:absolute;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 16px 40px -16px rgba(20,17,51,.4);font-weight:600;font-size:.85rem;z-index:3;display:flex;align-items:center;gap:10px}
 .float-card .ic{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
-.fc1{top:30px;left:-40px;animation:floaty 4s ease-in-out infinite}
-.fc2{bottom:60px;right:-46px;animation:floaty 4s ease-in-out infinite .8s}
+.fc1{top:-18px;left:-44px;animation:floaty 4s ease-in-out infinite}
+.fc2{bottom:-16px;right:-44px;animation:floaty 4s ease-in-out infinite .8s}
+.phone-front{overflow:visible}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-@media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:50px}.phone{transform:rotate(0)}.fc1{left:0}.fc2{right:0}}
+@media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:50px}.phone{transform:rotate(0)}.fc1{left:-20px}.fc2{right:-20px}}
+/* phone with instagram embed */
+.phone--ig .phone-screen{background:#fff}
+.phone--ig .instagram-media{min-width:0 !important;width:100% !important;box-shadow:none !important;border-radius:0 !important}
+/* duo de téléphones côte à côte */
+.phones-duo{position:relative;width:100%;display:flex;justify-content:center;align-items:flex-start;gap:14px;flex-wrap:nowrap}
+.phones-duo .phone{width:190px;height:auto;position:relative;flex:1 1 0;max-width:200px;padding:8px;border-radius:32px}
+.phones-duo .phone-screen{height:auto;min-height:340px}
+.phones-duo .phone-back{transform:rotate(2.5deg)}
+.phones-duo .phone-front{transform:rotate(-2.5deg)}
+.phones-duo .phone:hover{transform:rotate(0deg)}
+@media(max-width:880px){.phones-duo{gap:10px}.phones-duo .phone{width:160px}}
 
 /* ---------- marquee ---------- */
 .marquee{background:var(--ink);color:#fff;padding:18px 0;overflow:hidden;white-space:nowrap}
@@ -140,6 +152,7 @@ section{padding:100px 0;position:relative}
 .proof--ig{display:flex;flex-direction:column}
 .proof--ig .instagram-media{border-radius:0 !important;box-shadow:none !important;border:none !important}
 .proof--ig .proof-body{border-top:1px solid rgba(26,17,51,.06)}
+.fb-video-frame{border-radius:24px 24px 0 0}
 .proof-body{padding:24px 24px 26px}
 .proof-tag{display:block;font-weight:700;font-size:.92rem;margin-bottom:10px;color:var(--ink)}
 .proof-body p{font-size:1.02rem;color:#3a3052;margin-bottom:12px;line-height:1.4}
@@ -159,7 +172,7 @@ section{padding:100px 0;position:relative}
 .guarantee-cond{font-size:.98rem !important;color:#6b6080 !important}
 @media(max-width:780px){.guarantee{flex-direction:column;padding:36px 26px;gap:18px}}
 /* pour qui */
-.forwho{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:8px}
+.forwho{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
 .who{background:#fff;border-radius:20px;padding:28px 18px;text-align:center;border:1px solid rgba(26,17,51,.06);box-shadow:0 12px 34px -24px rgba(20,17,51,.3);transition:transform .3s,box-shadow .3s}
 .who:hover{transform:translateY(-6px);box-shadow:0 20px 44px -22px rgba(230,53,127,.4)}
 .who .emo{font-size:2.1rem;display:block;margin-bottom:12px}
@@ -313,8 +326,8 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
   <div class="wrap hero-grid">
     <div>
       <span class="pill"><span class="live"></span>Commerçants · Artisans · Indépendants</span>
-      <h1>Fais 1 million de vues cette année <span class="hl">sans jamais chercher tes idées</span>.</h1>
-      <p class="hero-sub">56 concepts viraux déjà testés sur de vrais commerces. Tu ouvres le doc, tu choisis, tu filmes. Une vidéo par semaine pendant un an — sans te casser la tête, sans community manager.</p>
+      <h1>Fais 1 million de vues cette année <span class="hl">sans jamais chercher d'idées</span>.</h1>
+      <p class="hero-sub">56 concepts viraux déjà testés sur de vrais commerces. Tu ouvres le doc, tu choisis, tu filmes. Une vidéo par semaine pendant un an, sans te casser la tête, sans community manager.</p>
       <div class="hero-actions">
         <a href="https://buy.stripe.com/REMPLACER_LIEN" class="btn btn-primary">Je récupère mes 56 concepts ✦</a>
         <a href="#gratuit" class="btn btn-ghost">Voir 5 concepts gratuits</a>
@@ -322,17 +335,20 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
       <p class="hero-note">⚡ <b>Accès immédiat</b> · 56 concepts prêts à filmer · Un an de contenu</p>
     </div>
     <div style="position:relative">
-      <div class="phone">
-        <div class="phone-screen">
-          <div class="phone-top">
-            <div class="h">56 concepts viraux</div>
-            <div class="s">Un an de contenu prêt à filmer</div>
+      <div class="phones-duo">
+        <div class="phone phone--ig phone-back">
+          <div class="phone-screen">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DU6ZX_NDOVx/?utm_source=ig_embed" data-instgrm-version="14" data-instgrm-captioned="false" style="margin:0;width:100%;min-width:0;border:none"></blockquote>
           </div>
-          <div class="reel"><div class="views">+128k<span>vues en 48h</span></div></div>
+        </div>
+        <div class="phone phone--ig phone-front">
+          <div class="phone-screen">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DF-vZN4MHvD/?utm_source=ig_embed" data-instgrm-version="14" data-instgrm-captioned="false" style="margin:0;width:100%;min-width:0;border:none"></blockquote>
+          </div>
+          <div class="float-card fc1"><span class="ic" style="background:#FFE3EE">🔥</span>218k vues</div>
+          <div class="float-card fc2"><span class="ic" style="background:#E3E8FF">📈</span>Visibilité x22</div>
         </div>
       </div>
-      <div class="float-card fc1"><span class="ic" style="background:#FFE3EE">🔥</span>Idée #12 testée</div>
-      <div class="float-card fc2"><span class="ic" style="background:#E3E8FF">📈</span>+340% de portée</div>
     </div>
   </div>
 </header>
@@ -340,7 +356,7 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
 <!-- MARQUEE -->
 <div class="marquee">
   <div class="marquee-track">
-    <span class="star">✦</span><span>56 concepts prêts à filmer</span><span class="star">✦</span><span>Un an de contenu</span><span class="star">✦</span><span>Commerçants · Artisans · Indépendants</span><span class="star">✦</span><span>Plus jamais la page blanche</span><span class="star">✦</span><span>56 concepts prêts à filmer</span><span class="star">✦</span><span>Un an de contenu</span><span class="star">✦</span><span>Commerçants · Artisans · Indépendants</span><span class="star">✦</span><span>Plus jamais la page blanche</span><span class="star">✦</span>
+    <span class="star">✦</span><span>56 concepts prêts à filmer</span><span class="star">✦</span><span>Un an de contenu</span><span class="star">✦</span><span>Commerçants · Artisans · Indépendants</span><span class="star">✦</span><span>Stop à la panne d'idées</span><span class="star">✦</span><span>56 concepts prêts à filmer</span><span class="star">✦</span><span>Un an de contenu</span><span class="star">✦</span><span>Commerçants · Artisans · Indépendants</span><span class="star">✦</span><span>Stop à la panne d'idées</span><span class="star">✦</span>
   </div>
 </div>
 
@@ -349,7 +365,7 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
   <div class="wrap">
     <p class="eyebrow reveal">Soyons cash</p>
     <h2 class="s-title reveal">Tes réseaux devraient te ramener des clients. Mais il se passe rien.</h2>
-    <p class="s-lead reveal">Tu postes une vidéo. Tu attends. 38 vues, trois likes dont ta cousine. Et cette petite voix : « les réseaux, c'est pas pour moi. » Le problème, ça n'a jamais été toi — on ne t'a juste jamais montré quoi filmer.</p>
+    <p class="s-lead reveal">Tu postes une vidéo. Tu attends. 38 vues, trois likes dont ta cousine. Et cette petite voix : « les réseaux, c'est pas pour moi. » Le problème, ça n'a jamais été toi : on ne t'a juste jamais montré quoi filmer.</p>
     <div class="prob-grid">
       <div class="prob reveal"><span class="emo">😩</span><h3>Pas le temps</h3><p>Impossible de réfléchir à du contenu entre deux clients. Alors tu ne postes pas, ou tu postes au hasard.</p></div>
       <div class="prob reveal"><span class="emo">🤦</span><h3>Le bon moment, raté</h3><p>Belle transfo… mais t'as oublié de filmer le « avant ». Ou filmé le « avant » et zappé le résultat. À chaque fois.</p></div>
@@ -359,22 +375,6 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
       <p class="warn-lead">Le pire ? Tu penses peut-être que les réseaux, c'est secondaire. <span class="warn-quote">« Ça rapporte pas vraiment. »</span></p>
       <p class="warn-punch">C'est l'erreur la plus chère que tu puisses faire.</p>
       <p class="warn-after">Bien utilisés, les réseaux sont le levier qui multiplie ton chiffre d'affaires. Mal utilisés, c'est juste du temps perdu. La différence, c'est la méthode.</p>
-    </div>
-  </div>
-</section>
-
-<!-- DECLIC -->
-<section style="padding-top:0">
-  <div class="wrap">
-    <div class="declic">
-      <span class="blob"></span>
-      <div class="declic-inner">
-        <p class="eyebrow">Le déclic</p>
-        <h2>80% d'une vidéo qui marche, ça se joue dans les 3 premières secondes.</h2>
-        <p class="declic-lead">Les créateurs qui explosent ne sont pas plus doués que toi. Ils ne montent pas mieux, ils n'ont pas une plus belle boutique. Ils ont juste une chose que tu n'as pas encore : <b>une structure.</b></p>
-        <p class="declic-lead">Un hook qui arrête le scroll. Une idée qui donne envie de regarder jusqu'au bout. Et surtout, ils savent <b>à l'avance</b> ce qu'ils vont filmer — donc ils n'oublient jamais.</p>
-        <p class="declic-punch">Une formule qui marche, ça ne se devine pas. <span class="hl">Ça se copie.</span> Et je les ai déjà toutes écrites pour toi.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -391,6 +391,7 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
       <div class="who reveal"><span class="emo">🛍️</span><b>Boutiques</b><span>Mode, déco, fleuriste, épicerie</span></div>
       <div class="who reveal"><span class="emo">🔨</span><b>Artisans</b><span>Menuisier, garagiste, rénovation</span></div>
       <div class="who reveal"><span class="emo">🧘</span><b>Bien-être</b><span>Salle de sport, spa, kiné, yoga</span></div>
+      <div class="who reveal"><span class="emo">🏠</span><b>Immobilier</b><span>Mandataire, agent, promoteur</span></div>
     </div>
     <p class="who-note reveal">Et tout commerçant, artisan ou indépendant qui veut faire venir plus de clients grâce à Instagram.</p>
   </div>
@@ -425,15 +426,28 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
   </div>
 </section>
 
+<!-- HOW -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow reveal">Simple comme bonjour</p>
+    <h2 class="s-title reveal">3 étapes, c'est tout.</h2>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><h3>Tu reçois les 56 concepts</h3><p>Accès immédiat après paiement. Tu parcours les 56 concepts, classés et prêts à filmer.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3>Tu choisis & tu filmes</h3><p>Le lundi matin, tu prends un concept et tu le tournes en 10 minutes entre deux clients.</p></div>
+      <div class="step reveal"><div class="n">03</div><h3>Tu fais des vues</h3><p>Tu publies du contenu qui accroche, sans jamais sécher. Une vidéo par semaine, toute l'année.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- PREUVE -->
 <section>
   <div class="wrap">
     <p class="eyebrow reveal">La preuve</p>
-    <h2 class="s-title reveal">C'est pas de la théorie. Ça marche sur de vrais commerces.</h2>
+    <h2 class="s-title reveal">Ce n'est pas QUE de la théorie. Voici la pratique.</h2>
     <p class="s-lead reveal">Pas des influenceuses. Des commerçants, des artisans, des indépendants comme toi.</p>
     <div class="proof-grid">
       <div class="proof proof--ig reveal">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DYM-BsyGxOX/?utm_source=ig_embed" data-instgrm-version="14" style="margin:0;width:100%;min-width:0"></blockquote>
+        <iframe class="fb-video-frame" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F916493584493448&show_text=false&autoplay=false" style="border:none;overflow:hidden;width:100%;height:500px;display:block" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         <div class="proof-body">
           <span class="proof-tag">🟠 Sandra · Institut de beauté</span>
           <p>« J'ai doublé mon chiffre d'affaires depuis que je travaille avec eux. »</p>
@@ -444,7 +458,7 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DY2gd-oIN_r/?utm_source=ig_embed" data-instgrm-version="14" style="margin:0;width:100%;min-width:0"></blockquote>
         <div class="proof-body">
           <span class="proof-tag">🟠 Julien · Menuisier à Pau</span>
-          <p>Sa dernière vidéo : <b>+320 000 vues.</b> Un menuisier. Pas un influenceur.</p>
+          <p>Sa dernière vidéo : <b>+348k vues.</b> Un menuisier. Pas un influenceur.</p>
           <span class="proof-src">Voir sur Instagram</span>
         </div>
       </div>
@@ -452,17 +466,17 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DWtzaDRCcuv/?utm_source=ig_embed" data-instgrm-version="14" style="margin:0;width:100%;min-width:0"></blockquote>
         <div class="proof-body">
           <span class="proof-tag">🟠 Festival à Pau · parti de zéro</span>
-          <p><b>+100 000 vues</b> dès la première vidéo. Visibilité explosée du jour au lendemain.</p>
+          <p><b>+62k vues</b> dès la première vidéo. Visibilité explosée du jour au lendemain.</p>
           <span class="proof-src">Voir sur Instagram</span>
         </div>
       </div>
     </div>
     <div class="proof-banner reveal">
-      <span>+30 MILLIONS DE VUES GÉNÉRÉES</span>
+      <span>MÊME SI T'Y CONNAIS RIEN</span>
       <span class="sep">·</span>
-      <span>UNE VIDÉO À 2 MILLIONS DE VUES</span>
+      <span>FAUT JUSTE ÊTRE MOTIVÉ</span>
       <span class="sep">·</span>
-      <span>+1 200% DE CROISSANCE</span>
+      <span>À TOI DE JOUER</span>
     </div>
   </div>
 </section>
@@ -509,15 +523,18 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
   </div>
 </section>
 
-<!-- HOW -->
-<section>
+<!-- DECLIC -->
+<section style="padding-top:0">
   <div class="wrap">
-    <p class="eyebrow reveal">Simple comme bonjour</p>
-    <h2 class="s-title reveal">3 étapes, zéro prise de tête.</h2>
-    <div class="steps">
-      <div class="step reveal"><div class="n">01</div><h3>Tu reçois les 56 concepts</h3><p>Accès immédiat après paiement. Tu parcours les 56 concepts, classés et prêts à filmer.</p></div>
-      <div class="step reveal"><div class="n">02</div><h3>Tu choisis & tu filmes</h3><p>Le lundi matin, tu prends un concept et tu le tournes en 10 minutes entre deux clients.</p></div>
-      <div class="step reveal"><div class="n">03</div><h3>Tu fais des vues</h3><p>Tu publies du contenu qui accroche, sans jamais sécher. Une vidéo par semaine, toute l'année.</p></div>
+    <div class="declic">
+      <span class="blob"></span>
+      <div class="declic-inner">
+        <p class="eyebrow">Le déclic</p>
+        <h2>80% d'une vidéo qui marche, ça se joue dans les 3 premières secondes.</h2>
+        <p class="declic-lead">Les créateurs qui explosent ne sont pas plus doués que toi. Ils ne montent pas mieux, ils n'ont pas une plus belle boutique. Ils ont juste une chose que tu n'as pas encore : <b>une structure.</b></p>
+        <p class="declic-lead">Un hook qui arrête le scroll. Une idée qui donne envie de regarder jusqu'au bout. Et surtout, ils savent <b>à l'avance</b> ce qu'ils vont filmer, donc ils n'oublient jamais.</p>
+        <p class="declic-punch">Une formule qui marche, ça ne se devine pas. <span class="hl">Ça se copie.</span> Et je les ai déjà toutes écrites pour toi.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -529,7 +546,7 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
     <h2 class="s-title reveal" style="margin:0 auto 50px;text-align:center">On répond à tout.</h2>
     <div class="faq">
       <details class="reveal"><summary>Je n'ai pas le temps.</summary><p>Justement. Tu choisis un concept, tu filmes en 10 minutes entre deux clients. C'est conçu pour les gens débordés, pas pour ceux qui ont des journées vides.</p></details>
-      <details class="reveal"><summary>Je suis nul(le) face caméra.</summary><p>La moitié des concepts ne te montrent même pas en train de parler. Et pour les autres, le hook fait le boulot. Pas besoin de jouer un rôle — juste d'être toi.</p></details>
+      <details class="reveal"><summary>Je suis nul(le) face caméra.</summary><p>La moitié des concepts ne te montrent même pas en train de parler. Et pour les autres, le hook fait le boulot. Pas besoin de jouer un rôle, juste d'être toi.</p></details>
       <details class="reveal"><summary>Ça marche pour mon métier ?</summary><p>C'est exactement ce que disait Sandra avant de doubler son CA. Les concepts sont pensés pour les commerçants, artisans et indépendants, pas pour des influenceuses.</p></details>
       <details class="reveal"><summary>J'ai déjà payé une formation, ça n'a rien donné.</summary><p>Normal : les formations te parlent d'algorithme et de hashtags. Nous, on te dit quoi filmer demain matin. C'est l'inverse.</p></details>
       <details class="reveal"><summary>Comment je reçois les 56 concepts ?</summary><p>Accès immédiat après ton paiement sécurisé via Stripe. Tu reçois tout, à garder à vie, sans abonnement.</p></details>
