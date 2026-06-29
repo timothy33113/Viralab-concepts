@@ -87,7 +87,9 @@ h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .hero-note b{color:var(--ink)}
 
 /* phone mockup */
-.phone{position:relative;width:280px;height:560px;margin:0 auto;background:#15102b;border-radius:42px;padding:12px;box-shadow:0 40px 80px -30px rgba(44,143,209,.5);transform:rotate(3deg);transition:transform .5s}
+.phone{position:relative;width:300px;height:auto;min-height:540px;margin:0 auto;background:#15102b;border-radius:42px;padding:12px;box-shadow:0 40px 80px -30px rgba(44,143,209,.5);transform:rotate(3deg);transition:transform .5s}
+.phone--ig{transform:rotate(0)}
+.phone--ig .phone-screen{min-height:0}
 .phone:hover{transform:rotate(0deg)}
 .phone-screen{width:100%;height:100%;border-radius:32px;background:var(--grad-blue);overflow:hidden;position:relative;display:flex;flex-direction:column}
 .phone-top{padding:20px 18px 14px;color:#fff}
@@ -107,14 +109,6 @@ h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 /* phone with instagram embed */
 .phone--ig .phone-screen{background:#fff}
 .phone--ig .instagram-media{min-width:0 !important;width:100% !important;box-shadow:none !important;border-radius:0 !important}
-/* duo de téléphones côte à côte */
-.phones-duo{position:relative;width:100%;display:flex;justify-content:center;align-items:flex-start;gap:16px;flex-wrap:nowrap}
-.phones-duo .phone{width:auto;height:auto;position:relative;flex:1 1 0;max-width:310px;min-width:0;padding:8px;border-radius:30px}
-.phones-duo .phone-screen{height:auto;min-height:380px}
-.phones-duo .phone-back{transform:rotate(2.5deg)}
-.phones-duo .phone-front{transform:rotate(-2.5deg)}
-.phones-duo .phone:hover{transform:rotate(0deg)}
-@media(max-width:880px){.phones-duo{gap:10px}.phones-duo .phone{max-width:50%}}
 
 /* ---------- marquee ---------- */
 .marquee{background:var(--ink);color:#fff;padding:18px 0;overflow:hidden;white-space:nowrap}
@@ -338,20 +332,13 @@ footer{background:var(--ink);color:#fff;padding:70px 0 40px}
       <p class="hero-note">⚡ <b>Accès immédiat</b> · 56 concepts prêts à filmer · Un an de contenu</p>
     </div>
     <div style="position:relative">
-      <div class="phones-duo">
-        <div class="phone phone--ig phone-back">
-          <div class="phone-screen">
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DU6ZX_NDOVx/?utm_source=ig_embed" data-instgrm-version="14" data-instgrm-captioned="false" style="margin:0;width:100%;min-width:0;border:none"></blockquote>
-          </div>
-        </div>
-        <div class="phone phone--ig phone-front">
-          <div class="phone-screen">
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DF-vZN4MHvD/?utm_source=ig_embed" data-instgrm-version="14" data-instgrm-captioned="false" style="margin:0;width:100%;min-width:0;border:none"></blockquote>
-          </div>
-          <div class="float-card fc1"><span class="ic" style="background:#FFE3EE">🔥</span>218k vues</div>
-          <div class="float-card fc2"><span class="ic" style="background:#E3E8FF">📈</span>Visibilité x22</div>
+      <div class="phone phone--ig">
+        <div class="phone-screen">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DF-vZN4MHvD/?utm_source=ig_embed" data-instgrm-version="14" data-instgrm-captioned="false" style="margin:0;width:100%;min-width:0;border:none"></blockquote>
         </div>
       </div>
+      <div class="float-card fc1"><span class="ic" style="background:#FFE3EE">🔥</span>218k vues</div>
+      <div class="float-card fc2"><span class="ic" style="background:#E3E8FF">📈</span>Visibilité x22</div>
     </div>
   </div>
 </header>
